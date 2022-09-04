@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    /*navbar*/
+    #navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #d16f1e;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    #navbar li {
+        float: left;
+    }
+
+    #navbar ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 22px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 1.3rem;
+    }
+
+    #navbar li a:hover {
+        background-color: #111;
+
+    }
+
+
+    /* stars rating*/
+
+
+    .checked {
+        color: rgb(236, 146, 28);
+    }
+
+    /*css of section*/
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+
+    h1{
+        color: beige;
+        font-family: 'Quintessential', cursive;
+        font-size: 3.1rem;
+    }
+    #home::before {
+        content: "";
+        background: url("./foodipics/dhosa.jpg");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+    }
+
+    .h-primary {
+        text-align: center;
+        color: cornsilk;
+        font-size: 3.1rem;
+    }
+
+h4{
+    color: #111;
+}
+
+    .btn-btn {
+        font-size: 1.3rem;
+        border: #111;
+        margin: 17px;
+        border-radius: 10px;
+        background-color: #d16f1e;
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+    }
+
+    .btn-btn:hover {
+        color: orange;
+        height: 50px;
+        width: 150px;
+        border-radius: 5px;
+        background: #111;
+        border: #111;
+    }
+
+    /*cards gallery*/
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+background-color: rgba(240, 243, 243, 0.959);
+        width: 100px;
+        height: 250px;
+        text-align: center;
+      
+
+    }
+
+    .card:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        margin: 5px;
+        text-align: center;
+        color: seashell;
+        width: 240px;
+        height: 50px;
+
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 10px 10px;
+        grid-column-gap: 70px;
+        grid-row-gap: 10px;
+        margin-left: 180px;
+        margin-right: 250px;
+        border-radius: 15px;
+    }
+
+
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 100px;
+        color: rgb(241, 165, 13);
+
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1;
+        color: rgb(7, 7, 7);
+    }
+
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+
+    /*about*/
+    body {
+        font-family: Arial;
+        font-size: 17px;
+
+    }
+
+    .contain {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .contain img {
+        vertical-align: middle;
+        opacity: 15;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .contain .content {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        /* Fallback color */
+        background: rgba(0, 0, 0, 0.5);
+        /* Black background with 0.5 opacity */
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        height: 80%;
+    }
+
+    #about:before {
+        content: "";
+        background: url("./foodipics/salad.jpg") no-repeat center center/cover;
+        z-index: -1;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        opacity: 0.79;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        margin-top: 200px;
+    }
+
+    h3 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        font-size: 2.8rem;
+
+    }
+
+    h5 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        font-size: 2.8rem;
+        margin-top: 250px;
+    }
+
+   
+     
+  
+    
+    
+
+   
+    
+
+    
+
+   
+
+    
+    
+
+    
+     
+      
+
+    /*profile*/
+
+
+    .title {
+        color: grey;
+        font-size: 18px;
+    }
+
+
+
+
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+        width: 300px;
+        height: 400px;
+        color: #f1f1f1;
+
+
+    }
+
+    body {
+        background-color: rgb(6, 6, 7);
+    }
+
+    .images {
+        height: 200px;
+        width: 200px;
+        vertical-align: middle;
+    }
+
+    .container {
+        margin: 5px;
+        text-align: center;
+        color: seashell;
+        width: 300px;
+        height: 300px;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+
+
+
+    .buttons {
+        width: 60%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(8, 8, 8);
+        margin-bottom: 10px;
+        color: #f1f1f1;
+
+    }
+
+
+    .buttons:hover {
+        color: oldlace;
+        background-color: rgb(240, 170, 20);
+    }
+
+    h6 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        font-size: 2.8rem;
+        margin-top: 50px;
+    }
+
+    .profile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 10px 10px;
+        grid-column-gap: 70px;
+        grid-row-gap: 10px;
+        margin-left: 180px;
+        margin-right: 250px;
+        border-radius: 15px;
+    }
+
+
+
+    /*special dishes*/
+
+
+
+
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+        width: 300px;
+        height: 400px;
+        color: #f1f1f1;
+
+
+    }
+
+    body {
+        background-color: rgb(6, 6, 7);
+    }
+
+    .images {
+        height: 190px;
+        width: 100px;
+        vertical-align: middle;
+    }
+
+    .container {
+        margin: 5px;
+        text-align: center;
+        color: seashell;
+        width: 300px;
+        height: 300px;
+
+    }
+
+
+
+
+    h6 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        font-size: 2.8rem;
+        margin-top: 250px;
+    }
+
+    .special {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 10px 10px;
+        grid-column-gap: 70px;
+        grid-row-gap: 10px;
+        margin-left: 180px;
+        margin-right: 250px;
+        border-radius: 15px;
+    }
+
+
+    /*footer*/
+    .footer {
+       
+        background-color: #e67c26;
+      
+       margin-top: 250px;
+
+    }
+
+    .box {
+        margin-top: 250px;
+
+        width: 1179px;
+        margin: auto;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    .row {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .footer-col {
+        width: 20%;
+        padding: 25px;
+
+    }
+
+    .footer-col {
+        text-transform: capitalize;
+        font-style: "cursive";
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 15;
+        bottom: 410px;
+
+        background-color: rgb(13, 14, 14);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 20px;
+
+    }
+
+    .footer-col ul li a {
+        transition: all 0.3s ease;
+        color: rgb(15, 15, 14);
+    }
+
+    .footer-col ul li a:hover {
+        color: cornsilk;
+        padding-left: 10px;
+    }
+
+
+    /*top button in footer*/
+    #myBtn {
+  display: none;
+  position: fixed;
+  height: 50px;
+  width: 150px;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(131, 92, 92);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*login button*/
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(17, 16, 16);
+  box-sizing: border-box;
+}
+.pera{
+    color: beige;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #d88424;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #0c0b0b;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 340px;
+  height: 350px;
+  border-radius: 300px;
+  margin-top: 200px;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.login{
+    text-align: center;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #645a4d;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(235, 152, 27);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.p{
+    text-align: center;
+    margin-right: 534px;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+
+
+<body>
+    <!--navbar start-->
+
+    <nav id="navbar">
+
+        <ul>
+
+            <li><a href="#">HOME</a></li>
+            <li><a href="/gallery.html">GALLERY</a></li>
+            <li><a href="/about.html">ABOUT</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./populardishes.html">POPULAR DISHES</a></li>
+           
+
+       
+
+
+
+         <!--login button -->
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</ul>
+
+    </nav>
+
+
+    <section id="home">
+        <h2 class="h-primary">welcome to lazeez food</h2>
+        
+        <button class="btn-btn"> order now</button>
+    </section>
+   
+    <div>
+        <h2>Gallery</h2>
+    </div>
+
+    <div class="gallery">
+
+        <div class="card">
+            <a href="./foodipics/food.jpg">
+            <img src="./foodipics/food.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>layerd sandwich</b></h4>
+
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/frenchfries2.jpg">
+            <img src="./foodipics/frenchfries2.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>frenchfries
+
+                    </b>
+
+
+                </h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="./foodipics/frenchfries.jpg">
+            <img src="./foodipics/frenchfries.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>burger</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/cutlet.jpg">
+            <img src="./foodipics/cutlet.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>cutlet</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/chaomin.jpg">
+            <img src="./foodipics/chaomin.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>chaomin</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="./foodipics/brownbread sandwich.jpg">
+            <img src="./foodipics/brownbread sandwich.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>brownbread sandwich</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/burg.jpg">
+            <img src="./foodipics/burg.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>burger</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/biryani.jpg">
+            <img src="./foodipics/biryani.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>Biryani</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/boil rice.jpg">
+            <img src="./foodipics/boil rice.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>Boil rice</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/onionpizza.jpg">
+            <img src="./foodipics/onionpizza.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>onion pizza</b></h4>
+                <p>Tasty and Delicious food
+                 
+                </p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/soyachilli.jpg">
+            <img src="./foodipics/soyachilli.jpg" alt="Avatar" style="width:100%">
+        </a>
+            <div class="container">
+                <h4><b>soya chilli</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="./foodipics/Roast aallu.jpg">
+            <img src="./foodipics/Roast aallu.jpg" alt="Avatar" style="width:100%">
+            
+            </a>
+            <div class="container">
+                <h4><b>Roast aalu</b></h4>
+                <p>Tasty and Delicious food</p>
+                <p>Lorem ipsum dolor sit veritatis .</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>About</h3>
+    </div>
+    <div id="about">
+
+        <div class="contain">
+            <img src="./foodipics/salad.jpg" alt="Notebook" style="width:100%;">
+            <div class="content">
+                <h2>Read our story</h2>
+                <p class="pera">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+                    expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei
+                Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+                    expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.
+
+                Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+                    expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.Lorem
+                    ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque
+                    expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei</p>
+
+
+            </div>
+        </div>
+    </div>
+ 
+   
+
+
+
+        <section>
+            //profile card//
+            <h6>Meet our team
+            </h6>
+            <div class="profile">
+
+                <div class="card">
+                    <img src="./foodipics/chef.jpg" alt="Avatar" class="images" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jemmy</b></h4>
+                        <button class="buttons">contact</button>
+                        <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./foodipics/chef2.jpg" alt="Avatar" class="images" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jhone</b></h4>
+                        <button class="buttons">contact</button>
+                        <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./foodipics/chef.jpg" alt="Avatar" class="images" style="width:100%">
+                    <div class="container">
+                        <h4><b>Jakey Jef</b></h4>
+                        <button class="buttons">contact</button>
+                        <div style="margin: 24px 0;">
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+
+
+
+
+                    </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="box">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li class="list"><a href="#">about us</a>
+
+                            </li>
+                            <li class="list"><a href="#">about us</a></li>
+                            <li class="list"><a href="#">our service</a></li>
+                            <li class="list"><a href="#">privacy policy</a></li>
+                            <li class="list"><a href="#">affilate dishes</a></li>
+
+
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li class="list"><a href="#">FAQ</a>
+
+                            </li>
+                            <li class="list"><a href="#">shipping</a></li>
+                            <li class="list"><a href="#">order status</a></li>
+                            <li class="list"><a href="#">returns</a></li>
+                            <li class="list"><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Online order</h4>
+                        <ul>
+                            <li class="list"><a href="#">burger</a>
+
+                            </li>
+                            <li class="list"><a href="#">pizza</a></li>
+                            <li class="list"><a href="#">sandwich</a></li>
+                            <li class="list"><a href="#">biryani</a></li>
+                            <li class="list"><a href="#">veg</a></li>
+                            <li class="list"><a href="#">non-veg</a></li>
+                            <li class="list"><a href="#">sweets</a></li>
+                            <li class="list"><a href="#">drinks</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+
+
+
+                        </div>
+                       
+                        mobile number-9870734563
+
+                        E-mail-safiya123@gmail.com
+                        
+
+whatsup number-7417341345
+
+                    </div>
+                </div>
+            </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top ^</button>
+
+        </footer>
+
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+
+
+
+        
+</body>
+
+</html>

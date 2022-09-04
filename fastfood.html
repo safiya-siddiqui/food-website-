@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fast food</title>
+    <link rel="stylesheet" type="text\css" href="food.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flip-card {
+        background-color: rgb(203, 230, 173);
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+        border-radius: 15px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-back {
+        background-color: #c6D57E;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .gallerys {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 30px;
+        grid-column-gap: 40px;
+        grid-row-gap: 30px;
+        border-radius: 15px;
+    }
+
+    .container {
+        position: relative;
+
+        background-color: rgb(245, 241, 236);
+        padding: 20px;
+        margin: 20px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+
+
+    h1 {
+        font-family: 'Stalemate', cursive;
+        text-align: center;
+        color: rgb(255, 251, 251);
+        padding: 20px;
+    }
+
+    body {
+        background-color: rgb(10, 10, 10);
+    }
+
+    h2 {
+        color: black;
+    }
+
+
+
+
+
+
+
+
+
+    h3 {
+        color: rgb(9, 10, 9);
+    }
+
+    .li {
+        text-align: center;
+        color: rgb(236, 243, 236);
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: rgb(247, 126, 12);
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 8px;
+
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+
+
+    /*navigation bar-->ul list styling*/
+
+    ul {
+        display: flex;
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.7rem;
+    }
+
+    #navbar ul li a {
+        color: floralwhite;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+
+
+    /*items hover*/
+    #navbar ul li a:hover {
+        color: rgba(17, 16, 16, 0.973);
+        background-color: rgb(235, 234, 233);
+    }
+
+    @media screen and (max-width:1000px) {
+        .item {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width:760px) {
+        .item {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <h1>Welcome To The Menu of Lazeez Food</h1>
+
+
+
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="/home.html">Home</a></li>
+
+            <li class="item"><a href="/indianfood.html">indian food</a></li>
+            <li class="item"><a href="/drinks.html">drinks</a></li>
+            <li class="item"><a href="/sweets.html">sweets</a></li>
+
+
+        </ul>
+    </nav>
+
+
+    <section class="gallerys">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/foodipics/burger3.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="burger">burger</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>burger</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias corrupti voluptatem maxime!
+                        Id impedit tempore quos sapiente esse, est veniam rem exercitationem quaerat doloremque! Nisi
+                        explicabo ipsam dignissimos sequi!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/vegpizza.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="Veg pizza">Veg pizza</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>Veg pizza</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore aut maxime fugiat, enim a quas
+                        voluptate dolorem optio voluptatem, recusandae pariatur, reprehenderit soluta incidunt fugit cum
+                        reiciendis rem delectus quod.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/tikkaaalu.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="tikkaaalu">tikkaaalu</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>tikkaaalu</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In voluptatibus doloribus vero tenetur
+                        corporis impedit quae nulla. Tempore, quisquam! Quisquam doloribus adipisci neque voluptatem
+                        eligendi rerum nobis beatae, fugit libero.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/puffs.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="puffs">puffs</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>puffs</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum dignissimos voluptates
+                        quis dolor iusto consequatur sapiente sed possimus ab. Dolor rerum consectetur quisquam nostrum
+                        possimus, quas unde similique fugit?</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/puffpratha.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="puffpratha">puffpratha</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>puffpratha</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente magnam eligendi
+                        reprehenderit officiis porro, voluptas ullam incidunt amet voluptatibus sed quidem vitae officia
+                        facere earum quia iure deserunt eos.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/pizzz sandwich.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="pizza sandwich">pizza sandwich</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>pizza sandwich</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt ducimus maiores
+                        dignissimos voluptatibus tenetur nulla ipsum aliquid facere, iure, atque enim culpa perspiciatis
+                        magnam consequuntur expedita officiis sed eveniet?</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/mamooz.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="mamooz">mamooz</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>mamooz</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sint, exercitationem fuga nobis
+                        minus quos sapiente, tempore tenetur distinctio ipsum in, temporibus animi neque! Nemo,
+                        accusantium. Nihil consectetur similique accusantium.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/aaluchaat.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="aaluchaat">aalu chaat</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>aalu chaat</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quod unde eveniet iusto soluta
+                        aspernatur architecto quasi! Sapiente perferendis, optio sit quos voluptates vitae pariatur
+                        repudiandae ullam aliquid est corporis.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/drinkspics/breadsandwich.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="breadsandwich">bread sandwich</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>bread sandwich</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut repellendus inventore est cum ea,
+                        omnis labore amet voluptatum! Excepturi, dolor reprehenderit? Asperiores quaerat illum eaque
+                        cumque, nemo dolor in sit!</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/foodipics/chaomin.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="chaomin">chomin</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>chaomin</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque delectus ut nobis. Eveniet quae,
+                        harum voluptatem facilis fuga maiores aperiam, laboriosam, illum quis temporibus obcaecati
+                        pariatur soluta unde alias est.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/foodipics/cutlet.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="cutlet">cutlet</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>cutlet</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque delectus ut nobis. Eveniet quae,
+                        harum voluptatem facilis fuga maiores aperiam, laboriosam, illum quis temporibus obcaecati
+                        pariatur soluta unde alias est.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+
+                    <img src="/foodipics/dhosa.jpg" alt="" style="width:300px;height:200px;">
+                    <h3 title="dhosa">dhosa</h3>
+                    <button>Order</button>
+                </div>
+                <div class="flip-card-back">
+                    <h2>dhosa</h2>
+                    <p>delecious food</p>
+                    <p>enjoy the food</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod nisi alias eos deserunt, eum vitae
+                        inventore cumque non dicta in porro nulla. Ex sunt dignissimos eum repellat alias praesentium
+                        quia?</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+        width: 250px;
+        height: 350px;
+        background-color: #f1f1f1;
+
+
+    }
+
+    body {
+        background-color: rgb(6, 6, 7);
+    }
+
+    .images {
+        height: 250px;
+        width: 200px;
+        vertical-align: middle;
+    }
+
+    .card:hover .image {
+        opacity: 0.3;
+    }
+
+    .card:hover .container {
+        opacity: 1;
+    }
+
+    .text {
+        background-color: rgb(241, 165, 13);
+        color: white;
+        font-size: 20px;
+        padding: 16px 32px;
+        width: 140px;
+        left: 50%;
+        top: 50%;
+    }
+
+    .container {
+        margin: 5px;
+        text-align: center;
+        color: seashell;
+        width: 2px;
+        height: 300px;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+    }
+
+
+
+
+    h6 {
+        text-align: center;
+        color: rgb(241, 165, 13);
+        font-size: 2.8rem;
+        margin-top: 50px;
+    }
+
+    .special {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        padding: 10px 10px;
+        grid-column-gap: 70px;
+        grid-row-gap: 10px;
+        margin-left: 180px;
+        margin-right: 250px;
+        border-radius: 15px;
+    }
+
+
+     /*footer*/
+     .footer {
+        margin-top: 350px;
+        background-color: #e67c26;
+        padding: 70px;
+
+    }
+
+    .box {
+        margin-top: 250px;
+
+        width: 1179px;
+        margin: auto;
+    }
+
+    ul {
+        list-style: none;
+
+    }
+
+    .row {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .footer-col {
+        width: 20%;
+        padding: 25px;
+
+    }
+
+    .footer-col {
+        text-transform: capitalize;
+        font-style: "cursive";
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 15;
+        bottom: 410px;
+
+        background-color: rgb(13, 14, 14);
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 20px;
+
+    }
+
+    .footer-col ul li a {
+        transition: all 0.3s ease;
+        color: rgb(15, 15, 14);
+    }
+p{
+    margin-left: 15px;
+}
+    .footer-col ul li a:hover {
+        color: cornsilk;
+        padding-left: 10px;
+    }
+   
+</style>
+
+<body>
+    <h6>Special Dishes</h6>
+    <div class="special">
+
+        <div class="card">
+            <img src="./foodipics/frenchfries2.jpg" alt="Avatar" class="images" style="width:100%">
+            <p>Lorem ipsum dolor sit amet,  vitae quaerat deserunt!
+                Explicabo,  molestias cumquecessitatibus?</p>
+            <div class="container">
+                <div class="text">Frenchfries</div>
+
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./foodipics/burger3.jpg" alt="Avatar" class="images" style="width:100%">
+            <p>Lorem ipsum dolor sit amet,  vitae quaerat deserunt!
+                Explicabo,  molestias cumquecessitatibus?</p>
+            <div class="container">
+                <div class="text">Burger</div>
+
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="./foodipics/shahipaneersabji.jpg" alt="Avatar" class="images" style="width:100%">
+            <p>Lorem ,  vitae quaerat deserunt!
+                Explicabo,  molestias cumquecessitatibus?</p>
+            <div class="container">
+                <div class="text">Paneer sabji</div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="box">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li class="list"><a href="#">about us</a>
+
+                        </li>
+                        <li class="list"><a href="#">about us</a></li>
+                        <li class="list"><a href="#">our service</a></li>
+                        <li class="list"><a href="#">privacy policy</a></li>
+                        <li class="list"><a href="#">affilate dishes</a></li>
+
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li class="list"><a href="#">FAQ</a>
+
+                        </li>
+                        <li class="list"><a href="#">shipping</a></li>
+                        <li class="list"><a href="#">order status</a></li>
+                        <li class="list"><a href="#">returns</a></li>
+                        <li class="list"><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Online order</h4>
+                    <ul>
+                        <li class="list"><a href="#">burger</a>
+
+                        </li>
+                        <li class="list"><a href="#">pizza</a></li>
+                        <li class="list"><a href="#">sandwich</a></li>
+                        <li class="list"><a href="#">biryani</a></li>
+                        <li class="list"><a href="#">veg</a></li>
+                        <li class="list"><a href="#">non-veg</a></li>
+                        <li class="list"><a href="#">sweets</a></li>
+                        <li class="list"><a href="#">drinks</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
